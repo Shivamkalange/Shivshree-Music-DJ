@@ -9,7 +9,7 @@ let songItem=Array.from(document.getElementsByClassName('songItem'));
 
 let songs=[
     {songName:"Pasoori", filePath:"songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName:"Daru Desi", filePath:"songs/2.mp3", coverPath: "covers/2.jpg"},
+    {songName:"Chandra", filePath:"songs/2.mp3", coverPath: "covers/2.jpg"},
     {songName:"Halamithi Habibo", filePath:"songs/3.mp3", coverPath: "covers/3.jpg"},
     {songName:"Shivaba Raj", filePath:"songs/4.mp3", coverPath: "covers/4.jpg"},
     {songName:"SubanAllah", filePath:"songs/5.mp3", coverPath: "covers/5.jpg"},
@@ -24,6 +24,10 @@ const playNextSong = ()=>{
     } else{
         songIndex += 1;
     }
+    makeAllPlays();
+    const element = document.getElementById(songIndex);
+    element.classList.remove('fa-circle-play');
+    element.classList.add('fa-circle-pause');
     audioElement.src = `songs/${songIndex}.mp3`;
     console.log(`songs/${songIndex}.mp3`);
     masterSongName.innerText = songs[songIndex-1].songName;
