@@ -22,7 +22,7 @@ nav ul li{
     padding: 0 12px;
 }
 .brand img{
-    width: 44px;
+    width: 111px;
     padding: 0 8px;
 }
 .brand{
@@ -41,7 +41,7 @@ nav ul li{
     width: 70%;
     border-radius: 12px;
     
-    background-image: url('bg.jpg');
+    background-image: url('bj.jpg');
 }
 .Bottom{
     position: sticky;
@@ -75,6 +75,7 @@ nav ul li{
     justify-content: space-between;
     align-items: center;
     border-radius: 34px;
+    border: 3px solid #42c4d9;
 }
 .songItem img{
       width: 33px;
